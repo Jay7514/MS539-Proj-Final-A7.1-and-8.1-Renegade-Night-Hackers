@@ -1,0 +1,6 @@
+C:\Users\Jay\source\repos\Matrix Game 1 MS539 Final Landrau\obj\Debug\Matrix Game 1 MS539 Final Landrau.csproj.AssemblyReference.cache
+C:\Users\Jay\source\repos\Matrix Game 1 MS539 Final Landrau\obj\Debug\Matrix_Game_1_MS539_Final_Landrau.Form1.resources
+C:\Users\Jay\source\repos\Matrix Game 1 MS539 Final Landrau\obj\Debug\Matrix_Game_1_MS539_Final_Landrau.GameObjects.MainPlayer.resources
+C:\Users\Jay\source\repos\Matrix Game 1 MS539 Final Landrau\obj\Debug\Matrix_Game_1_MS539_Final_Landrau.Properties.Resources.resources
+C:\Users\Jay\source\repos\Matrix Game 1 MS539 Final Landrau\obj\Debug\Matrix Game 1 MS539 Final Landrau.csproj.GenerateResource.cache
+C:\Users\Jay\source\repos\Matrix Game 1 MS539 Final Landrau\obj\Debug\Matrix Game 1 MS539 Final Landrau.csproj.CoreCompileInputs.cache

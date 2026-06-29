@@ -1,0 +1,84 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Matrix_Game_1_MS539_Final_Landrau.GameObjects
+{
+    internal class MainPlayer : UserControl
+    {
+        private Timer timerUpdate;
+        private System.ComponentModel.IContainer components;
+        private PictureBox pictureBox1;
+
+
+        public int speed = 3;
+
+
+
+
+        public void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timerUpdate = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Matrix_Game_1_MS539_Final_Landrau.Properties.Resources.Neo_Sprite_IDLE;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(87, 175);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // timerUpdate
+            // 
+            this.timerUpdate.Enabled = true;
+            this.timerUpdate.Interval = 33;
+            this.timerUpdate.Tick += new System.EventHandler(this.Update);
+            // 
+            // MainPlayer
+            // 
+            this.Controls.Add(this.pictureBox1);
+            this.Name = "MainPlayer";
+            this.Size = new System.Drawing.Size(91, 179);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+        }
+
+        
+        public MainPlayer()
+
+        {
+            InitializeComponent();
+        }
+
+        
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Update(object sender, EventArgs e)
+        {
+            if (Core.IsUp)
+                Top -= speed;
+            if (Core.IsDown) 
+                Top += speed;
+            if (Core.IsLeft)
+                Left -= speed;
+            if (Core.IsRight)
+                Left += speed;
+
+                
+        }
+    }
+    
+}
